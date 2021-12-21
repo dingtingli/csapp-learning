@@ -116,7 +116,7 @@ gedit
 
 pwd 
  
- 英文全称：print work directory
+ 英文全称：Print Work Directory
  
  作用：显示工作目录。
 
