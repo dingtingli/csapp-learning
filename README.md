@@ -7,3 +7,5 @@ Computer Systems A Programmer's Perspective
 1. [资料](/资源.md)
 
 2. [准备 Linux 环境](/准备Linux环境.md)
+
+3. [Linux 使用 -- GUI APP](/使用Ubuntu01.md)
