@@ -83,7 +83,7 @@ wsl --install
 按照提示输入用户名和密码。
 ![PNG08](/doc/illustrations/linuxpre/win11wsl-11.png)
 
-*注意：这里的密码既是该用户的密码，也是 Linux 系统用户 root 的密码。
+*注意：1，该用户为系统管理员。 2. Linux 默认系统用户 root 的密码是随机的，每次开机都有一个新的密码，如果希望修改可以参考[这篇文章](https://www.jianshu.com/p/e43e11d6ba09)。
 
 安装完成后，如下图所示，出现命令行。
 
