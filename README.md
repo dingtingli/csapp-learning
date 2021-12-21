@@ -8,4 +8,4 @@ Computer Systems A Programmer's Perspective
 
 2. [准备 Linux 环境](/准备Linux环境.md)
 
-3. [Linux 使用 -- GUI APP](/使用Ubuntu01.md)
+3. [Linux 使用 -- GUI 应用](/使用Ubuntu01.md)
