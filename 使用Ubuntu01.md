@@ -102,11 +102,11 @@ gedit
 
 注意是在 Windows 系统中，这就跟你在 windows 中打开记事本的感觉是一样的。
 
-![PNG09](/doc/illustrations/linuxuse01/win11wsl-23.png)
+![PNG09](/doc/illustrations/linuxuse01/win11wsl-40.png)
 
 除了通过命令行来打开 gedit 之外，我们甚至可以在开始菜单中找到打开该应用的入口。
 
-![PNG09](/doc/illustrations/linuxuse01/win11wsl-23.png)
+![PNG09](/doc/illustrations/linuxuse01/win11wsl-39.png)
 
 可以发现 WSL 的设计者，不仅仅希望子系统 Ubuntu 看起来像是一个 windows 应用，还希望该系统下的应用看起来也像一个 windwos 应用。太魔性了！
 
