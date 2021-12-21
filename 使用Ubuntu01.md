@@ -1,4 +1,4 @@
-# 使用 WSL 中的 Ubuntu 01
+# Linux 使用 01 -- GUI APP
 
 
 
