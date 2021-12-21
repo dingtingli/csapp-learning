@@ -114,25 +114,25 @@ gedit
 
 ## 本文中使用的命令
 
-pwd 
+1. pwd 
  
- 英文全称：Print Work Directory
+    英文全称：Print Work Directory
  
- 作用：显示工作目录。
+    作用：显示工作目录。
 
-clear
+2. clear
  
- 作用：清除屏幕。
+    作用：清除屏幕。
 
-sudo
+3. sudo
  
- 英文全称：Super User do
+    英文全称：Super User do
  
- 作用：以系统管理者的身份执行指令
+    作用：以系统管理者的身份执行指令
 
-apt
+4. apt
  
- 英文全称：Advanced Packaging Tool
+    英文全称：Advanced Packaging Tool
  
- 作用：前端软件包管理工具（ Debian / Ubuntu 中使用）
+    作用：前端软件包管理工具（ Debian / Ubuntu 中使用）
 
