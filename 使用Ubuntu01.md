@@ -12,9 +12,9 @@
 
 ![PNG01](/doc/illustrations/linuxuse01/win11wsl-12.png)
 
-这就是 Ubuntu 的使用界面，输入任何有效的 Linux 命令都可以使用。
+这就是 Ubuntu 的使用界面，这里可以输入任何有效的 Linux 命令。
 
-比如，我们输入下面的命令，用来查看当前所在的目录。
+比如，我们输入以下命令，用来查看当前所在的目录。
 
 ```cmd
 pwd
@@ -22,25 +22,27 @@ pwd
 
 ![PNG02](/doc/illustrations/linuxuse01/win11wsl-13.png)
 
-可以看到 `/home/terry`，说明是在 home 下面当前用户 terry 的文件夹下。
+可以看到 `/home/terry`，说明是在 home 下面叫 terry 的文件夹下。
 
 ## 打开 Ubuntu
 
-当前所在的这个窗口就是 Ubuntu 系统的入口。我们如何打开这个窗口呢？
+当前所在的这个窗口就是 Ubuntu 系统的入口。**我们在 Windows 中如何打开这个窗口呢？**
 
-在 Windows 中把安装后的 WSL 系统当作一个应用程序来看待，因此我们可以在开始菜单中找到它。
+在 Windows 中，把安装后的 WSL 子系统当作一个应用程序来看待，因此我们可以在开始菜单中找到它。
 
 ![PNG03](/doc/illustrations/linuxuse01/win11wsl-17.png)
 
 点击该应用图标就可以打开命令行窗口。
 
+*注意：使用 windows 终端也可以打开该系统的命令行。
+
 ## 测试 GUI
 
-这种使用体验和直接安装一个 Ubuntu 还是很不一样的。
+这样的使用体验和在虚拟机中直接安装一个 Ubuntu 还是很不一样的。
 
-首先，我们只能看到 Ubuntu 的命令行入口，这个系统内部的图像界面应用如果使用？
+1. 首先，我们只能看到 Ubuntu 的命令行入口，这个系统内部的图像界面应用如何安装和使用？
 
-其次，这个系统很像是 Windows 中的一个应用，上面看到的文件目 `/home/terry` 录在哪？它跟 Windows 系统中的文件夹有什么关系？
+2. 其次，这个系统很像是 Windows 中的一个应用，上面看到的文件目录 `/home/terry` 在哪？它跟 Windows 系统中的文件夹有什么关系？
 
 我们先来看第一个问题，关于第二个问题，下一篇文章再回答。
 
@@ -50,7 +52,7 @@ pwd
 
 该命令需要以系统管理员的身份运行，而命令 `sudo` (Super User do) 允许以系统管理员的身份运行命令。
 
-所以我们可以组合这两个命令 `sudo apt`，以系统管理员的身份运行 `apt`命令。
+所以我们可以组合这两个命令 `sudo apt`——以系统管理员的身份运行 `apt`命令。
 
 为了测试 GUI，我们选择了 gedit 这个应用，该应用类似于 windows 中的系统应用 notepad （记事本）。
 
@@ -78,7 +80,7 @@ sudo apt install gedit -y
 
 ![PNG07](/doc/illustrations/linuxuse01/win11wsl-21.png)
 
-gedit 应用已经安装完成。
+gedit 应用就安装完成了。
 
 ### 2. Ubuntu 中如何打开 GUI 应用
 
@@ -92,7 +94,7 @@ gedit 应用已经安装完成。
 gedit
 ```
 
-*如果觉得之前的命令使得命令行显示的信息太多，可以使用 `clear` 命令来清空所有信息。在输入 gedit 之前，就使用 clear 清空过。
+*如果觉得之前的命令使得命令行显示的信息太多，可以使用 `clear` 命令来清空所有信息。下面的截图，在输入 gedit 之前，就使用 clear 清空过。
 
 ![PNG08](/doc/illustrations/linuxuse01/win11wsl-22.png)
 
@@ -106,7 +108,7 @@ gedit
 
 ![PNG09](/doc/illustrations/linuxuse01/win11wsl-23.png)
 
-可以发现 WSL 的开发人员，不仅仅希望子系统 Ubuntu 看起来像是一个 windows 应用，还希望该系统下的应用看起来也像一个 windwos 应用。太魔性了！
+可以发现 WSL 的设计者，不仅仅希望子系统 Ubuntu 看起来像是一个 windows 应用，还希望该系统下的应用看起来也像一个 windwos 应用。太魔性了！
 
 这让我对之前的第二个问题更感兴趣了——**两个系统的文件目录是如何在一起工作的？**
 
