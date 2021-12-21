@@ -33,11 +33,10 @@ explorer.exe .
 
 2. 文件资源管理器中直接打开
 
-通过 WSL 安装好 Ubuntu 系统之后，在 Windows 的文件资源管理器中可以看到，在左侧导航的最下放有一个 Linux 图标。
+通过 WSL 安装好 Ubuntu 系统之后，在 Windows 的文件资源管理器中可以看到，左侧导航的最下方有一个 Linux 图标。点击后也可以访问 Ubuntu 中的目录。
 
 ![PNG04](/doc/illustrations/linuxuse02/win11wsl-31.png)
 
-点击后也可以访问 Ubuntu 中的目录。
 
 ## 测试：在 Windows 和 Ubuntu 中修改同一份文件
 
@@ -69,9 +68,9 @@ sudo gedit text.txt
 
 直接使用 `gedit text.txt` 命令，会显示没有权限保存，所以前面加上 `sudo` ，表示使用管理员权限打开。
 
-![PNG07](/doc/illustrations/linuxuse02/win11wsl-32.png)
-
 在文件中输入 “from ubuntu.” 后保存。
+
+![PNG07](/doc/illustrations/linuxuse02/win11wsl-32.png)
 
 3. Windows 中修改同一份文件
 
@@ -87,6 +86,7 @@ sudo gedit text.txt
 
 ![PNG09](/doc/illustrations/linuxuse02/win11wsl-38.png)
 
+**我们可以通过 Windows 来方便地创建文件，然后使用 Ubuntu 中的命令来编译或者运行该文件，这样就可以同时兼顾二者的优势。**
 
 ## 在 Ubuntu 中如何访问 Windows 中的目录结构
 
@@ -105,6 +105,8 @@ sudo gedit text.txt
 ![PNG05](/doc/illustrations/linuxuse02/win11wsl-42.png)
 
 这种访问方式太神奇，可以直接通过 Linux 命令管理 windows 文件系统。
+
+*猜测：通过 WSL 安装的 Ubuntu 发行版是微软修改过后的版本。
 
 ## 本文中使用的命令
 
