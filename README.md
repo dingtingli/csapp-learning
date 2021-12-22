@@ -11,3 +11,5 @@ Computer Systems A Programmer's Perspective
 3. [使用 Linux 01 -- GUI 应用](/使用Ubuntu01.md)
 
 4. [使用 Linux 02 -- 访问文件目录](/使用Ubuntu02.md)
+
+5. [使用 Linux 02 -- gcc](/使用Ubuntu03.md)
