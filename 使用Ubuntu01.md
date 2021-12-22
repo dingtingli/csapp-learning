@@ -134,3 +134,5 @@ gedit
  
     作用：前端软件包管理工具（ Debian / Ubuntu 中使用）
 
+    在 RedHat / Fedora 中，使用 yum（Yellow dog Update， Modified）来代替 apt。
+
