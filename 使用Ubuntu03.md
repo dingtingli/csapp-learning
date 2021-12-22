@@ -46,7 +46,7 @@ sudo apt install build-essential
 
 目标：在当前目录 `/home/terry` 下创建一个新的目录 `clang` ，然后在该目录中创建一个 c 语言文件 `printtest.c`。
 
-我们尝试使用命令行来外出上述目标。
+我们尝试使用命令行来完成上述目标。
 
 1. 创建新的目录
 
@@ -71,7 +71,7 @@ touch printtest.c
 
 ![PNG07](/doc/illustrations/linuxuse03/win11gcc-10.png)
 
-通过 `ls` 命令发现我们把 printtest.c 这个文件的位置搞错了，需要将这个文件挪到 clang 目录下面。
+通过 `ls` 命令发现我们把 printtest.c 这个文件的位置搞错了，需要将这个文件移到 clang 目录下面。
 
 ```cmd
 mv printtest.c clang
