@@ -12,6 +12,6 @@ Computer Systems A Programmer's Perspective
 
 4. [使用 Linux 02 -- 访问文件目录](/使用Ubuntu02.md)
 
-5. [使用 Linux 02 -- gcc](/使用Ubuntu03.md)
+5. [使用 Linux 03 -- gcc](/使用Ubuntu03.md)
 
-6. [使用 Linux 02 -- vs code](/使用Ubuntu04.md)
+6. [使用 Linux 04 -- VS Code](/使用Ubuntu04.md)
