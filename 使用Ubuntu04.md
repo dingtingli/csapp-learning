@@ -1,4 +1,4 @@
-# 使用 Linux 03 -- VS Code
+# WSL 05 -- VS Code
 
 [上一篇文章](/使用Ubuntu03.md)中我们介绍了 gcc 编译器，并且尝试了在 Ubuntu 中使用 Vim 编辑器创建 c 语言文件。
 

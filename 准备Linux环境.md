@@ -1,4 +1,4 @@
-# 准备 Linux 环境
+# WSL 01 -- 安装 Ubuntu
 
 我们可以在物理机上直接安装 Linux 发行版，也可以在 VMWare 或者 Hyper-V 等虚拟机软件上安装。
 

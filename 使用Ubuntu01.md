@@ -1,4 +1,4 @@
-# 使用 Linux 01 -- GUI 应用
+# WSL 02 -- Ubuntu 中安装 GUI 应用
 
 在[前面一篇文章](/准备Linux环境.md)中，我们已经介绍了如何通过 WSL 安装 Ubuntu。
 

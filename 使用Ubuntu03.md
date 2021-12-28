@@ -1,4 +1,4 @@
-# 使用 Linux 03 -- gcc
+# WSL 04 -- gcc
 
 [之前的文章中](/使用Ubuntu01.md)我们介绍了在 Ubuntu 中如何安装图形应用 gedit，以及 [Windows 和 Ubuntu 两个系统之间如何访问各自的文件目录](/使用Ubuntu02.md)。
 
