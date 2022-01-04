@@ -17,3 +17,7 @@ Computer Systems A Programmer's Perspective
 6. [WSL 05 -- VS Code](/使用Ubuntu04.md)
 
 7. [WSL 06 -- gdb](/使用Ubuntu05.md)
+
+8. [从程序的角度看，内存是什么？](/程序角度的内存.md)
+
+9. [从程序的角度看，内存的布局是什么样？](/程序角度的内存布局.md)
