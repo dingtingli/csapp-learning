@@ -4,6 +4,8 @@ Computer Systems A Programmer's Perspective
 
 深入理解计算机系统 学习笔记
 
+## 准备
+
 1. [资料](/资源.md)
 
 2. [WSL 01 -- 安装 Ubuntu](/准备Linux环境.md)
@@ -18,6 +20,7 @@ Computer Systems A Programmer's Perspective
 
 7. [WSL 06 -- gdb](/使用Ubuntu05.md)
 
-8. [从程序的角度看，内存是什么？](/程序角度的内存.md)
+## 第三章 笔记
+1. [从程序的角度看，内存是什么？](/程序角度的内存.md)
 
-9. [从程序的角度看，内存的布局是什么样？](/程序角度的内存布局.md)
+2. [从程序的角度看，内存的布局是什么样？](/程序角度的内存布局.md)
