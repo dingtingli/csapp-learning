@@ -20,7 +20,8 @@ Computer Systems A Programmer's Perspective
 
 7. [WSL 06 -- gdb](/使用Ubuntu05.md)
 
-## 第三章 笔记
+## 第三章 程序的机器级表示 笔记
+
 1. [从程序的角度看，内存是什么？](/程序角度的内存.md)
 
 2. [从程序的角度看，内存的布局是什么样？](/程序角度的内存布局.md)
