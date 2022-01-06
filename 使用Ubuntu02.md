@@ -94,7 +94,7 @@ sudo gedit text.txt
 
 之前看过 Linux 系统根目录下面的文件夹。
 
-![PNG03](/doc/illustrations/linuxuse02/win11wsl-26.png)
+![PNG03](/doc/illustrations/linuxuse02/win11wsl-24.png)
 
 其中有一个文件夹叫做 `mnt`，点开后就可以看到如下目录结构：
 
