@@ -27,3 +27,5 @@ Computer Systems A Programmer's Perspective
 2. [内存的布局](/程序角度的内存布局.md)
 
 3. [寄存器](/寄存器.md)
+
+4. [指令集 1 - 操作数格式](/指令集1操作数.md)
