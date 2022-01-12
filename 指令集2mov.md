@@ -27,7 +27,12 @@ movq %rsi,(%rdi)
 3. %rsi 中存放的是数值 3
 4. 地址 0x100 对应的内存空间中的值为 4
 
-（图）
+<figure>
+    <img src="./doc/illustrations/mov/mov1.PNG" width="700" alt="running time" align="center">
+    <figcaption><em>初始状态</em></figcaption>
+    <br><br>
+</figure>
+
 ```amd
 movq (%rdi),%rax
 ```
@@ -36,14 +41,22 @@ movq (%rdi),%rax
 
 （%rdi）操作数的意思：%rdi 中的数据 0x100 是内存地址，从该地址中读取内存空间的值 4。
 
-（图）
+<figure>
+    <img src="./doc/illustrations/mov/mov2.jpg" width="700" alt="running time" align="center">
+    <figcaption><em>movq (%rdi),%rax</em></figcaption>
+    <br><br>
+</figure>
 
 ```amd
 movq %rsi,(%rdi)
 ```
 这句指令的意思是：将 (%rsi) 代表的数据复制到 (%rdi) 中。
 
-(图)
+<figure>
+    <img src="./doc/illustrations/mov/mov3.jpg" width="700" alt="running time" align="center">
+    <figcaption><em>movq %rsi,(%rdi)</em></figcaption>
+    <br><br>
+</figure>
 
 现在我们来看一下 `q` 是什么意思。
 
