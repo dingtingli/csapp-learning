@@ -52,7 +52,7 @@ movq (%rdi),%rax
 ```arm
 movq %rsi,(%rdi)
 ```
-这句指令的意思是：将 (%rsi) 代表的数据复制到 (%rdi) 中。
+这句指令的意思是：将 %rsi 中的数据复制到 (%rdi) 中。
 
 <figure>
     <img src="./doc/illustrations/mov/mov03.gif" width="700" alt="running time" align="center">
