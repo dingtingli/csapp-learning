@@ -2,12 +2,14 @@
 
 [上一篇文章](./指令集1操作数.md)介绍了指令操作数的格式，这次让我们来看看一条具体的指令 mov。
 
+```arm
 mov S, D
+```
 
 mov 指令是将数据从一个位置（S）复制到另一个位置（D）。
 
 我们以一段之前使用过 c 语言为例。
-[详情可点击z这里](./寄存器.md)
+[详情可点击这里](./寄存器.md)
 ```c
 long x = *xp;
 *xp = y;
@@ -16,7 +18,7 @@ return x;
 
 这段代码转换成指令如下：
 
-```amd
+```arm
 movq (%rdi),%rax
 movq %rsi,(%rdi)
 ```
@@ -33,7 +35,7 @@ movq %rsi,(%rdi)
     <br><br>
 </figure>
 
-```amd
+```arm
 movq (%rdi),%rax
 ```
 
@@ -42,18 +44,18 @@ movq (%rdi),%rax
 （%rdi）操作数的意思：%rdi 中的数据 0x100 是内存地址，从该地址中读取内存空间的值 4。
 
 <figure>
-    <img src="./doc/illustrations/mov/mov2.jpg" width="700" alt="running time" align="center">
+    <img src="./doc/illustrations/mov/mov02.gif" width="700" alt="running time" align="center">
     <figcaption><em>movq (%rdi),%rax</em></figcaption>
     <br><br>
 </figure>
 
-```amd
+```arm
 movq %rsi,(%rdi)
 ```
 这句指令的意思是：将 (%rsi) 代表的数据复制到 (%rdi) 中。
 
 <figure>
-    <img src="./doc/illustrations/mov/mov3.jpg" width="700" alt="running time" align="center">
+    <img src="./doc/illustrations/mov/mov03.gif" width="700" alt="running time" align="center">
     <figcaption><em>movq %rsi,(%rdi)</em></figcaption>
     <br><br>
 </figure>
@@ -74,8 +76,8 @@ q 代表操作数所对应的位数是 64 位（8 字节）。除了 q 之外还
 注意两点：
 1. mov 指令不可以将数据从内存直接复制到内存，这个操作需要经过寄存器。
 
-2. 32 位 movl 操作会将寄存器中的高位 4 个字节设置成 0。
-`movl $0x4050, %eax`，除了设置 32 位的 %eax 的同时，还会将 %rax 的高位 4 个字节设置成 0。
+2. 32 位 movl 指令会将寄存器中的高位 4 个字节设置成 0。
+`movl $0x4050, %eax`，除了设置 32 位的 %eax，同时还会将 %rax 的高位 4 个字节设置成 0。
 
 ## 参考
 
