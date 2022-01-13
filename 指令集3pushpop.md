@@ -22,8 +22,11 @@ Stack（堆）可以添加和删除数据，不过要遵循“后进先出”的
 通常，“栈底”在高位内存地址，栈顶在低位内存地址。所以，栈顶元素的内存地址是栈中所有元素中最低的。
 
 由于我们话内存示意图的时候，习惯将低位内存地址放在下面，高位内存地址放在上面。所以栈的内存示意图像一个倒扣过来的桶，底上。
-
-（图）
+<figure>
+    <img src="./doc/illustrations/stack/stack01.png" width="700" alt="running time" align="center">
+    <figcaption><em>stack 示意图</em></figcaption>
+    <br><br>
+</figure>
 
 ## 压入和弹出栈的指令
 
@@ -38,8 +41,57 @@ pushq S
 ```
 
 该操作会执行两个步骤：
+
 1. 修改栈指针 %rsp，因为压入的是 q（8 个字节），所以栈指针需要 `-8`。
 2. 将值 S 写到新的栈顶地址。
 
 c 语言中没有直接操作栈的语句，所有我们直接使用指令语句做演示，以后我们会详细讲解什么样的 c 语言代码会导致栈操作。
 
+```arm
+pushq %rax
+```
+假设指令开始之前，内存和寄存器的状态是这样的。
+
+<figure>
+    <img src="./doc/illustrations/stack/stack02.png" width="700" alt="running time" align="center">
+    <figcaption><em>初始状态</em></figcaption>
+    <br><br>
+</figure>
+
+具体操作如下：
+1. 修改栈指针，将栈指针 `-8`，以扩展栈的空间。
+2. 将 %rax 的内容写到新的栈顶地址。
+
+<figure>
+    <img src="./doc/illustrations/stack/stack03.gif" width="700" alt="running time" align="center">
+    <figcaption><em>push</em></figcaption>
+    <br><br>
+</figure>
+
+弹出指令：
+
+```arm
+popq D
+```
+
+pop 与 push 正好相反：
+
+1. 从栈顶读取数据，写到 D
+1. 修改栈指针 %rsp，因为弹出的是 q（8 个字节），所以栈指针需要 `+8`。
+
+沿用上面图示的状态，使用如下指令：
+
+```arm
+pushq %rax
+```
+具体操作如下：
+1. 将栈顶数据写到 %rax 中，
+2. 修改栈指针，将栈指针 `+8`，以减小栈的空间。
+
+<figure>
+    <img src="./doc/illustrations/stack/stack04.gif" width="700" alt="running time" align="center">
+    <figcaption><em>push</em></figcaption>
+    <br><br>
+</figure>
+
+需要注意的是，我们只是修改了栈顶指针，原来栈顶的地址的数据并没有删除。
