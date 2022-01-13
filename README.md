@@ -31,3 +31,5 @@ Computer Systems A Programmer's Perspective
 4. [指令集 1 - 操作数格式](/指令集1操作数.md)
 
 5. [指令集 2 - MOV](/指令集2mov.md)
+
+6. [指令集 3 - Push / Pop](/指令集3pushpop.md)
