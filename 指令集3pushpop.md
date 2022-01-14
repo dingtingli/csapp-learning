@@ -22,17 +22,19 @@ Stack（堆）可以添加和删除数据，不过要遵循“后进先出”的
 通常，“栈底”在高位内存地址，栈顶在低位内存地址。所以，栈顶元素的内存地址是栈中所有元素中最低的。
 
 由于我们画内存示意图的时候，习惯将低位内存地址放在下面，高位内存地址放在上面，所以栈的内存示意图像一个倒扣过来的桶，底上。
+
+另外，**栈顶元素的内存地址保存在寄存器 %rsp 中（register stack point）。**
+
 <figure>
     <img src="./doc/illustrations/stack/stack01.png" width="700" alt="running time" align="center">
     <figcaption><em>stack 示意图</em></figcaption>
     <br><br>
 </figure>
 
+
 ## 压入和弹出栈的指令
 
-向栈中添加数据称为“Push（压）”，从栈中删除数据称为“Pop（弹）”。
-
-介绍具体操作之前，需求了解一个细节，栈顶元素的内存地址保存在寄存器 %rsp 中（register stack point）。
+向栈中添加数据的动作称为“Push（压）”，从栈中删除数据的动作称为“Pop（弹）”。
 
 压栈指令
 
