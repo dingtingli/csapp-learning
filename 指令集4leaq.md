@@ -24,6 +24,12 @@ movq (%rax,%rdx,0x8)，%rax
 
 该指令会将从内存中读出的值 `0x11`，写入 %rax 中。
 
+<figure>
+    <img src="./doc/illustrations/leaq/leaq01.gif" width="700" alt="movq" align="center">
+    <figcaption align="center"><em>movq</em></figcaption>
+   <br><br>
+</figure>
+
 ## leaq 指令
 
 这次介绍一个 `movq` 的指令变形，叫做 `leaq` （load effective address：加载有效地址）。
@@ -39,10 +45,16 @@ leaq S, register
 比如跟上面那条指令对应的 `leaq`：
 
 ```arm
-movq (%rax,%rdx,0x8)，%rax
+leaq (%rax,%rdx,0x8)，%rax
 ```
 
 该指令会将 `%rax + %rdx * 0x8` 计算出来的值 `0x118`，直接写入 %rax 中。
+
+<figure>
+    <img src="./doc/illustrations/leaq/leaq02.gif" width="700" alt="leaq" align="center">
+    <figcaption align="center"><em>leaq</em></figcaption>
+   <br><br>
+</figure>
 
 ## C 语言示例
 
@@ -70,11 +82,23 @@ leaq (%rax, %rdx, 4), %rax
 
 另外，函数的返回值会保存在 %rax 中。
 
+<figure>
+    <img src="./doc/illustrations/leaq/leaq03.gif" width="700" alt="leaq 01" align="center">
+    <figcaption align="center"><em>leaq 01</em></figcaption>
+   <br><br>
+</figure>
+
 ```arm
 leaq (%rdi, %rsi, 4), %rax
 ```
 
 该指令将计算 `%rdi + %rsi * 4 = x + y * 4`，并将值直接写入 %rax。
+
+<figure>
+    <img src="./doc/illustrations/leaq/leaq04.gif" width="700" alt="leaq 02" align="center">
+    <figcaption align="center"><em>leaq 02</em></figcaption>
+   <br><br>
+</figure>
 
 ```arm
 leaq (%rdx, %rdx, 2), %rdx
@@ -82,10 +106,18 @@ leaq (%rdx, %rdx, 2), %rdx
 
 该指令将计算 `%rdx + %rdx * 2 = z + z * 2 = 3 * z`，并将值直接写入 %rdx。
 
+<figure>
+    <img src="./doc/illustrations/leaq/leaq05.gif" width="700" alt="leaq 03" align="center">
+    <figcaption align="center"><em>leaq 03</em></figcaption>
+   <br><br>
+</figure>
+
 ```arm
 leaq (%rax, %rdx, 4), %rax
 ```
 该指令将计算 `%rax + %rdx * 4 = x + y * 4 + （3z） * 4 = x + 4 * y + 12 * z`，并将值直接写入 %rdx。
+
+（图）
 
 ## 作用
 
