@@ -85,36 +85,35 @@ leaq (%rax, %rdx, 4), %rax
 ```arm
 leaq (%rdi, %rsi, 4), %rax
 ```
-<figure>
-    <img src="./doc/illustrations/leaq/leaq03.gif" width="700" alt="leaq 01" align="center">
-    <figcaption align="center"><em>leaq 01</em></figcaption>
-   <br><br>
-</figure>
 
 该指令将计算 `%rdi + %rsi * 4 = x + y * 4`，并将值直接写入 %rax。
+
+<figure>
+    <img src="./doc/illustrations/leaq/leaq03.gif" width="700" alt="leaq 01" align="center">
+   <br><br>
+</figure>
 
 ```arm
 leaq (%rdx, %rdx, 2), %rdx
 ```
 
+该指令将计算 `%rdx + %rdx * 2 = z + z * 2 = 3 * z`，并将值直接写入 %rdx。
+
 <figure>
     <img src="./doc/illustrations/leaq/leaq04.gif" width="700" alt="leaq 02" align="center">
-    <figcaption align="center"><em>leaq 02</em></figcaption>
    <br><br>
 </figure>
-
-该指令将计算 `%rdx + %rdx * 2 = z + z * 2 = 3 * z`，并将值直接写入 %rdx。
 
 ```arm
 leaq (%rax, %rdx, 4), %rax
 ```
-<figure>
-    <img src="./doc/illustrations/leaq/leaq05.gif" width="700" alt="leaq 03" align="center">
-    <figcaption align="center"><em>leaq 03</em></figcaption>
-   <br><br>
-</figure>
 
 该指令将计算 `%rax + %rdx * 4 = x + y * 4 + （3z） * 4 = x + 4 * y + 12 * z`，并将值直接写入 %rdx。
+
+<figure>
+    <img src="./doc/illustrations/leaq/leaq05.gif" width="700" alt="leaq 03" align="center">
+   <br><br>
+</figure>
 
 ## 作用
 
