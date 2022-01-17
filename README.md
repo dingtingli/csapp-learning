@@ -32,4 +32,6 @@ Computer Systems A Programmer's Perspective
 
 5. [指令集 2 - mov](/指令集2mov.md)
 
-6. [指令集 3 - push / pop](/指令集3pushpop.md)
+6. [指令集 3 - leaq](/指令集4leaq.md)
+
+6. [指令集 4 - push / pop](/指令集3pushpop.md)
