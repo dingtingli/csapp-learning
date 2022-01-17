@@ -2,7 +2,7 @@
 
 ## movq 回顾
 
-在[操作数格式](./指令集1操作数.md)中，我们介绍了各种操作数的使用格式
+在[操作数格式](./指令集1操作数.md)中，我们介绍了各种操作数的使用格式，比如下面这种：
 
 ```arm
 (%rax,%rdx,0x8)
@@ -16,7 +16,7 @@
     <br><br>
 </figure>
 
-如果在 `movq` 中使用这个操作数，比如：
+如果在 `movq` 中使用这个操作数：
 
 ```arm
 movq (%rax,%rdx,0x8)，%rax
@@ -34,7 +34,7 @@ movq (%rax,%rdx,0x8)，%rax
 
 这次介绍一个 `movq` 的指令变形，叫做 `leaq` （load effective address：加载有效地址）。
 
-跟 `movq` 类似，`leaq` 也有两个操作数，但不一样的是，第二个操作数必须是寄存器。所以，该指令只有 `leaq` 一种形式，没有 `b`，`w`, `l` 等其他新手。
+跟 `movq` 类似，`leaq` 也有两个操作数，但不一样的是，第二个操作数必须是寄存器。所以，该指令只有 `leaq` 一种形式，没有 `b`，`w`, `l` 等其它形式。
 
 ```
 leaq S, register
@@ -82,17 +82,20 @@ leaq (%rax, %rdx, 4), %rax
 
 另外，函数的返回值会保存在 %rax 中。
 
+```arm
+leaq (%rdi, %rsi, 4), %rax
+```
 <figure>
     <img src="./doc/illustrations/leaq/leaq03.gif" width="700" alt="leaq 01" align="center">
     <figcaption align="center"><em>leaq 01</em></figcaption>
    <br><br>
 </figure>
 
-```arm
-leaq (%rdi, %rsi, 4), %rax
-```
-
 该指令将计算 `%rdi + %rsi * 4 = x + y * 4`，并将值直接写入 %rax。
+
+```arm
+leaq (%rdx, %rdx, 2), %rdx
+```
 
 <figure>
     <img src="./doc/illustrations/leaq/leaq04.gif" width="700" alt="leaq 02" align="center">
@@ -100,24 +103,18 @@ leaq (%rdi, %rsi, 4), %rax
    <br><br>
 </figure>
 
-```arm
-leaq (%rdx, %rdx, 2), %rdx
-```
-
 该指令将计算 `%rdx + %rdx * 2 = z + z * 2 = 3 * z`，并将值直接写入 %rdx。
 
+```arm
+leaq (%rax, %rdx, 4), %rax
+```
 <figure>
     <img src="./doc/illustrations/leaq/leaq05.gif" width="700" alt="leaq 03" align="center">
     <figcaption align="center"><em>leaq 03</em></figcaption>
    <br><br>
 </figure>
 
-```arm
-leaq (%rax, %rdx, 4), %rax
-```
 该指令将计算 `%rax + %rdx * 4 = x + y * 4 + （3z） * 4 = x + 4 * y + 12 * z`，并将值直接写入 %rdx。
-
-（图）
 
 ## 作用
 
