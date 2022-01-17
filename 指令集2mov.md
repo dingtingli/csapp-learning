@@ -30,7 +30,7 @@ movq %rsi,(%rdi)
 4. 地址 0x100 对应的内存空间中的值为 4
 
 <figure>
-    <img src="./doc/illustrations/mov/mov1.PNG" width="700" alt="running time" align="center">
+    <img src="./doc/illustrations/mov/mov01.png" width="700" alt="running time" align="center">
     <figcaption><em>初始状态</em></figcaption>
     <br><br>
 </figure>
