@@ -34,4 +34,6 @@ Computer Systems A Programmer's Perspective
 
 6. [指令集 3 - leaq](/指令集4leaq.md)
 
-6. [指令集 4 - push / pop](/指令集3pushpop.md)
+7. [指令集 4 - unary opeartion](/指令集5一元操作.md)
+
+6. [指令集 5 - push / pop](/指令集3pushpop.md)
