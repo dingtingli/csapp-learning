@@ -1,7 +1,5 @@
 # 指令集 03 - 压入和弹出栈
 
-[上一篇文章](./指令集2mov.md)我们介绍了 `mov` 指令，用于将数据从一个地方复制到另一个地方。
-
 在[内存布局](./程序角度的内存布局.md)中，最上面一部分叫做 Stack（堆），这次我们就来看看两个关于 Stack 的指令，Push 和 Pop。
 <figure>
     <img src="./doc/illustrations/memory/Memory06.png" width="700" alt="memory layout" align="center">
