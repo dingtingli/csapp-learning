@@ -39,3 +39,5 @@ Computer Systems A Programmer's Perspective
 8. [指令集 5 - 二元操作](/指令集6二元操作.md)
 
 9. [指令集 6 - push / pop](/指令集3pushpop.md)
+
+10. [运行时栈 1 - 准备](/运行时栈1准备.md)
