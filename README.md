@@ -41,3 +41,7 @@ Computer Systems A Programmer's Perspective
 9. [指令集 6 - push / pop](/指令集3pushpop.md)
 
 10. [运行时栈 1 - 准备](/运行时栈1准备.md)
+
+11. [运行时栈 2 - 分配内存和参数准备](/运行时栈2分配内存.md)
+
+12. [运行时栈 3 - 转移控制 call](/运行时栈3转移控制.md)
