@@ -25,12 +25,12 @@ movq %rsi,(%rdi)
 
 运行指令前假设：
 1. %rdi 中存放的是内存地址 0x100
-2. %rax 中没有有值
-3. %rsi 中存放的是数值 3
+2. %rsi 中存放的是数值 3
+3. %rax 中没有值
 4. 地址 0x100 对应的内存空间中的值为 4
 
 <figure>
-    <img src="./doc/illustrations/mov/mov01.png" width="700" alt="running time" align="center">
+    <img src="./doc/illustrations/mov/mov01_1.png" width="700" alt="running time" align="center">
     <figcaption><em>初始状态</em></figcaption>
     <br><br>
 </figure>
@@ -44,7 +44,7 @@ movq (%rdi),%rax
 （%rdi）操作数的意思：%rdi 中的数据 0x100 是内存地址，从该地址中读取内存空间的值 4。
 
 <figure>
-    <img src="./doc/illustrations/mov/mov02.gif" width="700" alt="running time" align="center">
+    <img src="./doc/illustrations/mov/mov02_1.gif" width="700" alt="running time" align="center">
     <figcaption><em>movq (%rdi),%rax</em></figcaption>
     <br><br>
 </figure>
@@ -55,7 +55,7 @@ movq %rsi,(%rdi)
 这句指令的意思是：将 %rsi 中的数据复制到 (%rdi) 中。
 
 <figure>
-    <img src="./doc/illustrations/mov/mov03.gif" width="700" alt="running time" align="center">
+    <img src="./doc/illustrations/mov/mov03_1.gif" width="700" alt="running time" align="center">
     <figcaption><em>movq %rsi,(%rdi)</em></figcaption>
     <br><br>
 </figure>
