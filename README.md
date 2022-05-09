@@ -55,3 +55,7 @@ Computer Systems A Programmer's Perspective
 16. [递归](/递归.md)
 
 17. [条件码](/条件码.md)
+
+## 第三章 程序的机器级表示 笔记 公众号版本
+
+1. [前言 - 学习笔记](/mpweixin/前言.md)
