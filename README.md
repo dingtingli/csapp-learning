@@ -58,4 +58,8 @@ Computer Systems A Programmer's Perspective
 
 ## 第三章 程序的机器级表示 笔记 公众号版本
 
-1. [前言 - 学习笔记](/mpweixin/前言.md)
+1. [前言 - 学习笔记](/mpweixin/00前言.md)
+
+2. [从程序的角度看，内存是什么？](/mpweixin/01内存.md)
+
+3. [内存的布局](./mpweixin/02内存的布局.md)
