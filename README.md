@@ -63,3 +63,5 @@ Computer Systems A Programmer's Perspective
 2. [从程序的角度看，内存是什么？](/mpweixin/01内存.md)
 
 3. [内存的布局](./mpweixin/02内存的布局.md)
+
+4. [寄存器](./mpweixin/03寄存器.md)
