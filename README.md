@@ -65,3 +65,5 @@ Computer Systems A Programmer's Perspective
 3. [内存的布局](./mpweixin/02内存的布局.md)
 
 4. [寄存器](./mpweixin/03寄存器.md)
+
+5. [指令 1 - MOV](./mpweixin/04指令1MOV.md)
