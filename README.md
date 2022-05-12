@@ -69,3 +69,7 @@ Computer Systems A Programmer's Perspective
 5. [指令 1 - MOV](./mpweixin/04指令1MOV.md)
 
 6. [指令 2 - LEA](./mpweixin/05指令2LEA.md)
+
+7. [指令 3 - 算术和逻辑](./mpweixin/06指令算术和逻辑.md)
+
+8. [指令 4 - PUSH 和 POP](./mpweixin/07指令push和pop.md)
