@@ -67,3 +67,5 @@ Computer Systems A Programmer's Perspective
 4. [寄存器](./mpweixin/03寄存器.md)
 
 5. [指令 1 - MOV](./mpweixin/04指令1MOV.md)
+
+6. [指令 2 - LEA](./mpweixin/05指令2LEA.md)
