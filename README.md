@@ -73,3 +73,5 @@ Computer Systems A Programmer's Perspective
 7. [指令 3 - 算术和逻辑](./mpweixin/06指令算术和逻辑.md)
 
 8. [指令 4 - PUSH 和 POP](./mpweixin/07指令push和pop.md)
+
+9. [指令 5 - CALL 和 RET](./mpweixin/08指令call和ret.md)
