@@ -182,7 +182,7 @@ ret 指令正好和 call 指令相反，它会做两个操作：
  7. [算术和逻辑指令](./06指令算术和逻辑.md)
  8. [PUSH 和 POP 指令](./07指令push和pop.md)
 
-如果你对这份笔记有兴趣，可以直接关注这个公众号“dingtingli-pub”，我会每周更新三篇笔记。
+如果你对这份笔记有兴趣，可以关注这个公众号“dingtingli-pub”，我会每周更新笔记。
 
 <figure>
     <img src="../doc/illustrations/foreword/mpweixin.jpg" width="300" alt="push" align="center">
