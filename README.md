@@ -83,3 +83,5 @@ Computer Systems A Programmer's Perspective
 12. [条件码寄存器](./mpweixin/11条件码寄存器.md)
 
 13. [条件控制](./mpweixin/12条件控制.md)
+
+14. [循环](./mpweixin/13循环.md)
