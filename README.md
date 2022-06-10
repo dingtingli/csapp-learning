@@ -81,3 +81,7 @@ Computer Systems A Programmer's Perspective
 11. [栈帧的布局](./mpweixin/10栈帧的布局.md)
 
 12. [条件码寄存器](./mpweixin/11条件码寄存器.md)
+
+13. [条件控制](./mpweixin/12条件控制.md)
+
+14. [循环](./mpweixin/13循环.md)
