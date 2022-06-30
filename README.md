@@ -87,3 +87,5 @@ Computer Systems A Programmer's Perspective
 14. [循环](./mpweixin/13循环.md)
 
 15. [递归](./mpweixin/14递归.md)
+
+16. [从底层逻辑开始](./mpweixin/17从底层逻辑开始.md)
